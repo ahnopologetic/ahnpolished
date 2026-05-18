@@ -27,12 +27,18 @@ export const metadata: Metadata = {
   },
   description: 'We build software with the precision of someone who plans to be here in ten years.',
   metadataBase: new URL('https://ahnpolished.com'),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   openGraph: {
     type: 'website',
     siteName: 'ahnpolished',
     title: 'ahnpolished',
     description: 'We build software with the precision of someone who plans to be here in ten years.',
-    images: [{ url: '/og.png', width: 1200, height: 630 }],
+    url: 'https://ahnpolished.com',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'ahnpolished' }],
   },
   twitter: {
     card: 'summary_large_image',
